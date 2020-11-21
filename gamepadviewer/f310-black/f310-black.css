@@ -1,0 +1,205 @@
+
+.controller.custom {
+    background: url(back.png);
+    height: 32px;
+    width: 64px;
+}
+
+.custom.disconnected {
+    background: url(back-disconnected.png);
+}
+
+.custom.disconnected div {
+    display: none;
+}
+
+.custom .triggers {
+}
+
+.custom .trigger {
+    background: url(LR.png);
+    width: 12px;
+    height: 2px;
+    opacity: 0;
+}
+
+.custom .trigger.pressed {
+    opacity: 1;
+}
+.custom .trigger.left {
+    position: absolute;
+    left: 11px;
+    top: 2px;
+}
+
+.custom .trigger.right {
+    position: absolute;
+    left: 41px;
+    top: 2px;
+}
+
+.custom .quadrant{
+}
+.custom .p0{
+}
+.custom .p1{
+}
+.custom .p2{
+}
+.custom .p3{
+}
+
+.custom .bumpers {
+}
+
+.custom .bumper {
+    background: url(LR.png);
+    width: 12px;
+    height: 2px;
+    opacity: 0;
+}
+
+.custom .bumper.pressed {
+    opacity: 1;
+}
+
+.custom .bumper.left {
+    position: absolute;
+    left: 11px;
+    top: 7px;
+}
+
+.custom .bumper.right {
+    position: absolute;
+    left: 41px;
+    top: 7px;
+}
+
+.custom .arrows {
+}
+
+.custom .back {
+    background: url(select.png);
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 25px;
+    top: 27px;
+    opacity: 0;
+}
+
+.custom .start {
+    background: url(start.png);
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 32px;
+    top: 27px;
+    opacity: 0;
+}
+
+.custom .back.pressed, .custom .start.pressed {
+    opacity: 1;
+}
+
+.custom .abxy {
+}
+
+.custom .button {
+    background: url(maru.png);
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+}
+
+.custom .button.pressed {
+    opacity: 1;
+}
+
+.custom .a {
+    position: absolute;
+    left: 44px;
+    top: 24px;
+}
+
+.custom .b {
+    position: absolute;
+    left: 50px;
+    top: 18px;
+}
+
+.custom .x {
+    position: absolute;
+    left: 38px;
+    top: 18px;
+}
+
+.custom .y {
+    position: absolute;
+    left: 44px;
+    top: 12px;
+}
+
+.custom .sticks {
+}
+.custom .stick {
+}
+.custom .stick.left {
+}
+.custom .stick.right {
+}
+.custom .stick.pressed.left {
+}
+.custom .stick.pressed.right {
+}
+
+.custom .dpad {
+}
+
+.custom .face {
+    opacity: 0;
+}
+
+.custom .face.pressed {
+    opacity: 1;
+}
+
+.custom .face.up {
+    background: url(up.png);
+    width: 6px;
+    height: 7px;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+}
+
+.custom .face.down {
+    background: url(down.png);
+    width: 6px;
+    height: 7px;
+    position: absolute;
+    left: 14px;
+    top: 23px;
+}
+
+.custom .face.left {
+    background: url(left.png);
+    width: 7px;
+    height: 6px;
+    position: absolute;
+    left: 8px;
+    top: 18px;
+}
+
+.custom .face.right {
+    background: url(right.png);
+    width: 7px;
+    height: 6px;
+    position: absolute;
+    left: 19px;
+    top: 18px;
+}
+
+.custom.half {
+    margin-top: -16px;
+}
