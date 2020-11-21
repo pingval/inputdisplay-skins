@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin name="Playstation Digital 64x32 Dark" author="mui_nyan / pingval" type="playstation">
+
+  <!-- This skin is ported from padlight: http://www.geocities.jp/hungurumui/padskin.html -->
+
+  <background name="Default" image="back.png" color="black" />
+  <!-- You can add other background colors easily.
+    <background name="Darkslategray" image="back.png" color="darkslategray" />
+  -->
+
+  <button name="circle" image="maru.png" x="50" y="18" width="6" height="6" />
+  <button name="square" image="maru.png" x="38" y="18" width="6" height="6" />
+  <button name="triangle" image="maru.png" x="44" y="12" width="6" height="6" />
+  <button name="x" image="maru.png" x="44" y="24" width="6" height="6" />
+
+  <button name="l1" image="lr.png" x="11" y="7" width="12" height="2" />
+  <button name="r1" image="lr.png" x="41" y="7" width="12" height="2" />
+  <button name="l2" image="lr.png" x="11" y="2" width="12" height="2" />
+  <button name="r2" image="lr.png" x="41" y="2" width="12" height="2" />
+
+  <button name="start" image="start.png" x="32" y="27" width="7" height="2" />
+  <button name="select" image="select.png" x="25" y="27" width="7" height="2" />
+
+  <button name="up" image="up.png" x="14" y="12" width="6" height="7" />
+  <button name="left" image="left.png" x="8" y="18" width="7" height="6" />
+  <button name="down" image="down.png" x="14" y="23" width="6" height="7" />
+  <button name="right" image="right.png" x="19" y="18" width="7" height="6" />
+
+</skin>
