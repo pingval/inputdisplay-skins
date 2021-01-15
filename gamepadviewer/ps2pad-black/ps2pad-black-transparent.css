@@ -1,0 +1,9 @@
+@import url(ps2pad-black.css);
+
+.controller.custom {
+    background: url(back-transparent.png);
+}
+
+.custom.disconnected {
+    background: url(back-disconnected-transparent.png);
+}
