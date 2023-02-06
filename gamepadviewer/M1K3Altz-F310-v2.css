@@ -1,0 +1,294 @@
+﻿/*BEGIN Logitech F310 Version 2 Controller Styling*/
+/*This class defines the base attributes of the skin*/
+.controller.custom{ 
+    background: url(http://i.imgur.com/rJY43C7.png); 
+    height: 592px;
+    width: 784px;
+    margin-left: -392px; /* This is half of the skin's width to help center it on the screen */ 
+    margin-top: -259px; /* Normally half the skin's height, but may be a little more or less 
+    to account for the bar on the top of the page */
+}
+.custom.disconnected { /* This class shows an image when the controller is disconnected */
+    background: url(http://i.imgur.com/sGgTnqp.png);
+}
+/* This hides the controller's button when disconnected so only the background image remains */ 
+.custom.disconnected  div {
+    display: none;
+}
+.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+    width: 135px;
+    height: 96px;
+    position: absolute;
+    left: 99px;
+}
+.custom .trigger{/* These are the actual triggers themselves */
+    width:96px;
+    height:172px;
+    background: url(http://i.imgur.com/hEUdhKk.png);
+    opacity: 0;
+}
+/* The left and right classes below are used to position the triggers
+within the div they're contained in. Since their positions is realtive
+to the size of the parent element, we simply resize the parent element 
+above to achieve the desired position. */
+.custom .trigger.left{
+position: absolute;
+width: 76px;
+height: 96px;
+left: 23px;
+top: 0px;
+}
+.custom .trigger.right{
+ position: absolute;
+ width: 76px;
+ height: 96px;
+ right: -429px;
+ background-position: 76px 0px;
+}
+
+/* The bumpers follow the same methodology as the triggers in terms of
+placement */
+.custom .bumper{
+    width: 87px;
+    height: 24px;
+    background: url(http://i.imgur.com/aDdNmzv.png);
+    opacity: 0;
+}
+.custom .bumpers{
+    position: absolute;
+    width: 67px;
+    height: 20px;
+    left: 143px;
+    top: 103px;
+}
+.custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+    opacity: 1;
+}
+.custom .bumper.left{
+position: absolute;
+top: -1px;
+left: -26px;
+}
+.custom .bumper.right{
+position: absolute;
+top: -1px;
+right: -459px;
+background-position: 86px 0px;
+}
+/* This is to size and position the containing div for the 
+start and select buttons. */
+.custom .arrows{
+    position: absolute;
+    width: 205px;
+    height: 19px;
+    top: 250px;
+    left: 291px;
+}
+/* Setting the size and CSS sprite for the start and select buttons */
+.custom .back, .custom .start{
+    background: url(http://i.imgur.com/9NTmAKn.png);
+    width: 92px;
+    height: 29px;
+}
+.custom .back.pressed, .custom .start.pressed{
+width: 0px;
+    background-position: 0px 0px;
+    margin-top: -5px;
+}
+.custom .back{
+position: absolute;
+    width: 42px;
+	top: -10px;
+left: 1px;	
+}
+.custom .start{
+position: absolute;
+    width: 42px;
+	top: -10px;
+	right: 6px;
+}
+/* Positioning and size of the container for the face buttons */
+.custom .abxy{
+    position: absolute;
+    width: 204px;
+    height: 205px;
+    top: 156px;
+    left: 538px;
+}
+/* base class used to simplify the sprite mapping */
+.custom .button{
+    position: absolute;
+    width:58px;
+    height:55px;
+    background: url(http://i.imgur.com/ujWMoHl.png);
+}
+.custom .button.pressed{
+width: 0px;
+    background-position-y: -59px;
+    margin-top: -0px;
+}
+.custom .a{
+    background-position: 58px 0;
+    top: 175px;
+    left: 54px;
+}
+.custom .b{
+position: absolute;
+height: 58px;
+    background-position: 125px 1px;
+    top: 112px;
+    right: 30px;
+}
+.custom .x{
+    background-position: 0px 0;
+    top: 113px;
+    left: -6px;
+}
+.custom .y{
+position: absolute;
+height: 58px;
+    background-position: -66px 1px;
+    top: 51px;
+    left: 54px;
+}
+/* Analog sticks follow the same principles as the triggers in terms of positioning
+Note that the rotation of the sticks in hard coded with javascript, so it applies 
+the CSS inline. */
+.custom .sticks{
+    position: absolute;
+    width: 363px;
+    height: 105px;
+    top: 377px;
+    left: 193px;
+}
+.custom .stick{
+    position: absolute;
+    background: url(http://i.imgur.com/e6Can5g.png);
+    height:107px;
+    width: 107px;
+    left: 33px;
+}
+.custom .stick.pressed.left{
+    background-position-x: -123px;
+}
+.custom .stick.pressed.right{
+    background-position-x: -244px;
+}
+.custom .stick.left{
+    top: 50;
+    left: 50;
+}
+.custom .stick.right{
+position: absolute;
+    top: -1px;
+    left: 258px;
+}
+/* Dpad possitioning and sizing */
+.custom .dpad{
+    position: absolute;
+    width: 252px;
+    height: 64px;
+    top: 192px;
+    left: 74px;
+}
+.custom .face{
+    background: url(http://i.imgur.com/4GH8Fhb.png);
+    position: absolute;
+}
+.custom .face.up, .custom .face.down{
+    width: 50px;
+    height: 64px;
+}
+.custom .face.left, .custom .face.right{
+    width: 70px;
+    height: 64px;
+}
+.custom .face.up{
+width: 80;
+height: 64;
+    left:67px;
+    top: 44px;
+    background-position: 180px 0px;
+}
+.custom .face.down{
+    left: 62px;
+    top: 107px;
+    background-position: 125px 0px;
+}
+.custom .face.left{
+    top: 79px;
+    left: 26px;
+    background-position: 0px 0px;
+}
+.custom .face.right{
+    top: 79px;
+    right: 97px;
+    background-position: 70px 0px;
+}
+.custom .face.pressed{
+width: 0;
+height: 0;
+    margin-top: 0px;
+    background-position-y: 0px;
+}
+/* NOTE: You NEED to set this to exactly half the height of what is listed 
+for '.controller.custom' so when your skin is activated via player selection
+parameters (e.g. http://mrmcpowned.com/gamepad?p=1) it will be correctly
+centered on screen. */
+.custom.half{
+    margin-top: -279px;
+}
+/* The following entries are empty because I haven't used them yet, but they
+exist for the purpose of displaying a fightstick. Since fightsticks have 
+the left and right triggers and digital buttons, there are separate 
+html items that allow the triggers to be shown as button presses isntead of
+an opacity setting */
+.custom .trigger-button.left{
+    
+}
+.custom .trigger-button.right{
+    
+}
+.custom .trigger-button.left.pressed{
+    
+}
+.custom .trigger-button.right.pressed{
+    
+}
+/* This is where the fight stick CSS would go. The ideal way of 
+showing the input would be to use an image sprite of a fight stick in
+all 8 positions, and change it according to the inputs. The classes 
+themselves are fairly self explanatory. */
+.fstick{
+    position: absolute;
+    width: 140px;
+    height: 132px;
+    top: 192px;
+    left: 74px;
+}
+.fstick.up{
+  
+}
+.fstick.down{
+  
+}
+.fstick.left{
+  
+}
+.fstick.right{
+  
+}
+.fstick.up.right{
+  
+}
+.fstick.up.left{
+  
+}
+.fstick.down.right{
+  
+}
+.fstick.down.left{
+  
+}
+
+/*END Logitech F310 Version 2 Controller Styling*/
